@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBOBET - Platform Taruhan Olahraga Fair Play & Transparan</title>
+    <meta name="description" content="SBOBET menyediakan platform taruhan olahraga fair play dan transparan. Nikmati pengalaman bertaruh yang adil dengan keamanan terjamin.">
+    <meta name="keywords" content="sbobet, taruhan olahraga, judi bola, fair play, transparan, sportsbook, betting online">
+    <meta name="author" content="SBOBET">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sbobet.site">
+    <meta property="og:title" content="SBOBET - Platform Taruhan Olahraga Fair Play & Transparan">
+    <meta property="og:description" content="SBOBET menyediakan platform taruhan olahraga fair play dan transparan. Nikmati pengalaman bertaruh yang adil dengan keamanan terjamin.">
+    <meta property="og:image" content="https://sbobet.site/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sbobet.site">
+    <meta property="twitter:title" content="SBOBET - Platform Taruhan Olahraga Fair Play & Transparan">
+    <meta property="twitter:description" content="SBOBET menyediakan platform taruhan olahraga fair play dan transparan. Nikmati pengalaman bertaruh yang adil dengan keamanan terjamin.">
+    <meta property="twitter:image" content="https://sbobet.site/images/og-image.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #1a3a5f;
+            --secondary-color: #e63946;
+            --accent-color: #f1faee;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(26, 58, 95, 0.85), rgba(26, 58, 95, 0.85)), url('https://images.unsplash.com/photo-1574624817991-7b999189bd2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #c41e3a;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid white;
+            color: white;
+            padding: 10px 28px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .btn-outline-custom:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .how-it-works {
+            background-color: var(--light-bg);
+        }
+        
+        .step-box {
+            text-align: center;
+            position: relative;
+            padding: 30px;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .testimonial-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .author-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .alt-links {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .alt-link-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        .alt-link-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .alt-link-box:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .alt-link {
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .alt-link:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer {
+            background-color: #0d253f;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://sbobet.site">SBOBET</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Cara Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alt-links">Link Alternatif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sbobet.site">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Platform Taruhan Olahraga Fair Play & Transparan</h1>
+            <p class="hero-subtitle">Nikmati pengalaman bertaruh yang adil dengan sistem transparan dan keamanan terjamin</p>
+            <div class="hero-buttons">
+                <a href="https://sbobet.site" class="btn-primary-custom">Mulai Bertaruh Sekarang</a>
+                <a href="#features" class="btn-outline-custom">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Platform Kami</h2>
+            <p class="section-subtitle">SBOBET menawarkan pengalaman taruhan olahraga yang adil, transparan, dan terpercaya</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="feature-title">Fair Play</h3>
+                        <p>Sistem yang dirancang untuk memastikan keadilan dalam setiap taruhan. Tidak ada manipulasi, murni berdasarkan performa tim.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="feature-title">Transparansi</h3>
+                        <p>Setiap transaksi dan perhitungan kemenangan dapat diakses secara transparan. Tidak ada yang disembunyikan dari member.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Keamanan Terjamin</h3>
+                        <p>Data pribadi dan transaksi keuangan Anda dilindungi dengan enkripsi tingkat tinggi untuk kenyamanan maksimal.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="feature-title">Odds Kompetitif</h3>
+                        <p>Nikmati odds terbaik di pasar untuk berbagai jenis olahraga dan pertandingan dari seluruh dunia.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Akses Mobile</h3>
+                        <p>Platform kami sepenuhnya responsif, memungkinkan Anda bertaruh kapan saja dan di mana saja melalui perangkat mobile.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="feature-title">Layanan 24/7</h3>
+                        <p>Tim support kami siap membantu Anda 24 jam sehari, 7 hari seminggu untuk setiap pertanyaan atau masalah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cara Kerja Platform Kami</h2>
+            <p class="section-subtitle">Proses sederhana untuk memulai pengalaman taruhan yang fair dan transparan</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Daftar Akun</h3>
+                        <p>Buat akun Anda dengan mengisi formulir pendaftaran sederhana. Proses verifikasi cepat dan aman.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Deposit Dana</h3>
+                        <p>Isi saldo akun Anda melalui berbagai metode pembayaran yang tersedia. Proses instan dan tanpa biaya tersembunyi.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Mulai Bertaruh</h3>
+                        <p>Pilih olahraga dan pertandingan favorit Anda, pasang taruhan, dan nikmati pengalaman fair play yang transparan.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://sbobet.site" class="btn-primary-custom">Daftar Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Member Kami</h2>
+            <p class="section-subtitle">Testimoni dari pengguna yang telah merasakan pengalaman taruhan fair dan transparan</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            "Saya telah menggunakan banyak platform taruhan, tetapi SBOBET benar-benar berbeda. Transparansi dalam setiap transaksi membuat saya merasa aman dan percaya."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <h4>Budi Santoso</h4>
+                                <p>Member sejak 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            "Sistem fair play di SBOBET sangat terasa. Saya pernah mengalami masalah di platform lain, tetapi di sini semuanya jelas dan adil."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <h4>Siti Nurhaliza</h4>
+                                <p>Member sejak 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            "Pelayanan pelanggan 24/7 sangat membantu. Setiap kali saya memiliki pertanyaan, tim responsif dan memberikan solusi cepat."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <h4>Ahmad Fauzi</h4>
+                                <p>Member sejak 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            "Odds yang ditawarkan sangat kompetitif. Saya bisa mendapatkan nilai lebih dari taruhan saya dibandingkan platform lain."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <h4>Dewi Lestari</h4>
+                                <p>Member sejak 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Links Section -->
+    <section id="alt-links" class="alt-links">
+        <div class="container">
+            <h2 class="alt-link-title">Link Alternatif Resmi</h2>
+            <p class="mb-4">Akses platform kami melalui link alternatif resmi berikut:</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="alt-link-box">
+                        <a href="https://sportbooks.id" class="alt-link" target="_blank">
+                            <i class="fas fa-link me-2"></i> https://sportbooks.id
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="alt-link-box">
+                        <a href="https://sportbooks.online" class="alt-link" target="_blank">
+                            <i class="fas fa-link me-2"></i> https://sportbooks.online
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <p>Link alternatif resmi untuk memastikan akses Anda ke platform SBOBET selalu tersedia tanpa pemblokiran.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">SBOBET</div>
+                    <p>Platform taruhan olahraga fair play dan transparan terpercaya di Indonesia.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="mb-3">Tautan Cepat</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://sbobet.site">Beranda</a></li>
+                        <li><a href="#features">Keunggulan</a></li>
+                        <li><a href="#how-it-works">Cara Kerja</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#alt-links">Link Alternatif</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="mb-3">Hubungi Kami</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope me-2"></i> support@sbobet.site</a></li>
+                        <li><a href="#"><i class="fas fa-phone me-2"></i> +62 812-3456-7890</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp me-2"></i> +62 812-3456-7890</a></li>
+                        <li><a href="#"><i class="fas fa-comments me-2"></i> Live Chat 24/7</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 SBOBET. All rights reserved. | Platform taruhan olahraga fair play dan transparan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add active class to nav items on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
